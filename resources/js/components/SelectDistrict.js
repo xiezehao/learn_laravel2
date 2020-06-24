@@ -61,9 +61,12 @@ Vue.component('select-district',{
     },
     // 组件初始化时会调用这个方法
     create(){
+        console.log(12313)
+        console.log(this.initValue)
         this.setFromValue(this.initValue);
     },
     methods:{
+
         setFromValue(value){
             // 过滤掉空值
             value=_.filter(value);
